@@ -6,6 +6,7 @@ import styled from 'styled-components';
 import { Viewport } from 'react-is-in-viewport';
 import { EaselFill } from 'react-bootstrap-icons';
 const Styles = styled.div`
+    
     padding-top:2%;
 
     .contents{

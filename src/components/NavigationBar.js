@@ -36,7 +36,7 @@ export const NavigationBar = () => (
         <Nav className="ml-auto">
           <Nav.Item>
             <Nav.Link>
-              <Link to="/about">Find Us</Link>
+              <Link to="/FindUs">Find Us</Link>
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>

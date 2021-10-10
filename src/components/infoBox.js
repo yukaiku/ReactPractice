@@ -4,6 +4,11 @@ import Card from 'react-bootstrap/Card';
 
 const Styles = styled.div`
     width:100%;
+
+    .cardBody{
+        background-color: rgba(232, 232, 232, 0.1);  
+    }
+    
 }
 `;
 function infoBox(props) {
@@ -11,7 +16,7 @@ function infoBox(props) {
     return (
         <Styles>
             <Card style={{ width: '100%' }}>
-                <Card.Body>
+                <Card.Body className="cardBody">
                     <Card.Title>{props.info.title}</Card.Title>
                     <Card.Text>
                     {props.info.description}

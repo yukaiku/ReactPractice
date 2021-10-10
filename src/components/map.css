@@ -1,3 +1,49 @@
+.statesLabel {
+  width: 100%;
+  text-align: center;
+  display: block;
+}
+
+.stateLabel {
+  padding-left: 1%;
+  padding-right: 1%;
+  width: 12.5%;
+  display: inline;
+  text-align: center;
+}
+.informationContainer {
+  display: flex;
+}
+.svg-container {
+  width: 60%;
+}
+.locationContainer {
+  background-color: rgba(232, 232, 232, 0.6);
+  border-radius: 2.5px;
+  padding: 2%;
+  width: 40%;
+  height: fit-content;
+}
+
+.storeInfoHeader {
+  padding-bottom: 1%;
+}
+
+.storeInfoContainer {
+  display: flex;
+  width: 100%;
+}
+.addressContainer {
+  width: 50%;
+}
+.tradingHoursContainer {
+  width: 50%;
+}
+.underline {
+  text-decoration: underline;
+}
+
+/* MAP CSS DO NOT TOUCH! */
 #states a path {
   transition: fill 0.5s ease;
   -moz-transition: fill 0.5s ease;
@@ -5,11 +51,18 @@
   fill: gold;
 }
 
+.stateHover path {
+  transition: fill 0.5s ease;
+  -moz-transition: fill 0.5s ease;
+  -webkit-transition: fill 0.5s ease;
+  fill: darkgoldenrod !important;
+}
+
 #states a:hover path {
   transition: fill 0.5s ease;
   -moz-transition: fill 0.5s ease;
   -webkit-transition: fill 0.5s ease;
-  fill: #425957 !important;
+  fill: darkgoldenrod !important;
 }
 
 #states a:hover path {
