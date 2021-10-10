@@ -1,0 +1,22 @@
+.each-slide > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  height: 350px;
+}
+
+.each-slide .slideShowBox {
+  opacity: 0.6;
+  padding: 20px;
+  background: black;
+  text-align: center;
+  border-style: groove;
+  border-radius: 25px;
+}
+.each-slide .slideShowBox span {
+  color: gold;
+  font-size: 20px;
+  font-weight: bold;
+  opacity: 1;
+}

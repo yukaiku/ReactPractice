@@ -1,19 +1,25 @@
 import React from 'react'
+import styled from 'styled-components';
+import Card from 'react-bootstrap/Card';
 
-function infoBox(info) {
-    title = info.title;
-    description = info.description;
+const Styles = styled.div`
+    width:100%;
+}
+`;
+function infoBox(props) {
 
     return (
-        <section className="col-lg3">
-            <h4>
-                {title}
-            </h4>
-            <p>
-                {description}
-            </p>
-        </section>
+        <Styles>
+            <Card style={{ width: '100%' }}>
+                <Card.Body>
+                    <Card.Title>{props.info.title}</Card.Title>
+                    <Card.Text>
+                    {props.info.description}
+                    </Card.Text>
+                </Card.Body>
+                </Card>
+        </Styles> 
     )
 }
 
-export default infoBox
+export default infoBox;

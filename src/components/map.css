@@ -1,0 +1,48 @@
+#states a path {
+  transition: fill 0.5s ease;
+  -moz-transition: fill 0.5s ease;
+  -webkit-transition: fill 0.5s ease;
+  fill: gold;
+}
+
+#states a:hover path {
+  transition: fill 0.5s ease;
+  -moz-transition: fill 0.5s ease;
+  -webkit-transition: fill 0.5s ease;
+  fill: #425957 !important;
+}
+
+#states a:hover path {
+  cursor: pointer;
+  fill: #425957;
+}
+
+#states a text {
+  cursor: pointer;
+  fill: #222222;
+}
+
+#states a:hover text {
+  fill: #eaeaea;
+  color: #eaeaea;
+}
+
+#states a.inverse text:hover {
+  fill: #eaeaea;
+}
+
+#states a.inverse text {
+  fill: #222222;
+}
+
+.CCMcredit a {
+  color: gold;
+}
+
+#states a text {
+  font-size: 9px;
+}
+
+.hover-color {
+  fill: #425957;
+}

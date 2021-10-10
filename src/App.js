@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import { Home } from './pages/Home';
+import Home from './pages/Home';
 import { About } from './pages/About';
 import { Contact } from './pages/Contact';
 import { NoMatch } from './NoMatch';
 import { Layout } from './components/Layout';
 import { NavigationBar } from './components/NavigationBar';
-import { Jumbotron } from './components/Jumbotron';
+import { Footer } from './components/Footer';
+import Slideshow from './components/Slideshow';
 
 class App extends Component {
   render() {
@@ -14,7 +15,7 @@ class App extends Component {
       <React.Fragment>
         <Router>
           <NavigationBar />
-          <Jumbotron />
+          <Slideshow/>
           <Layout>
             <Switch>
               <Route exact path="/" component={Home} />
@@ -23,6 +24,7 @@ class App extends Component {
               <Route component={NoMatch} />
             </Switch>
           </Layout>
+          <Footer/>
         </Router>
       </React.Fragment>
     );
