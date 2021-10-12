@@ -3,9 +3,9 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
 const Styles = styled.div`
-  .footer { 
+  .footer {
+      background-color: #222;
       padding: 5% 5% 5%;
-      background: black;
       color: gold;
       flex-direction:row;
       display:flex;
