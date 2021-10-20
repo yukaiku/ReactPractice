@@ -6,10 +6,8 @@ import Menu from './pages/Menu';
 import Opportunities from './pages/Opportunities';
 import Contact from './pages/Contact';
 import { NoMatch } from './NoMatch';
-import  Layout  from './components/Layout';
-import { NavigationBar } from './components/NavigationBar';
+import NavigationBar from './components/NavigationBar';
 import { Footer } from './components/Footer';
-import Slideshow from './components/Slideshow';
 
 
 class App extends Component {
@@ -18,17 +16,14 @@ class App extends Component {
       <React.Fragment>
         <Router>
           <NavigationBar />
-          <Slideshow/>
-          <Layout>
             <Switch>
-              <Route exact path="/" component={Home} />
-              <Route path="/FindUs" component={FindUs} />
-              <Route path="/Menu" component={Menu} />
-              <Route path="/Opportunities" component={Opportunities} />
-              <Route path="/Contact" component={Contact} />
-              <Route component={NoMatch} />
+                <Route exact path="/" component={Home} />
+                <Route path="/FindUs" component={FindUs} />
+                <Route path="/Menu" component={Menu} />
+                <Route path="/Opportunities" component={Opportunities} />
+                <Route path="/Contact" component={Contact} />
+                <Route component={NoMatch} />
             </Switch>
-          </Layout>
           <Footer/>
         </Router>
       </React.Fragment>

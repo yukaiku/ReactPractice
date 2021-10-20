@@ -2,18 +2,27 @@ import React from 'react'
 import './Slideshow.css'
 import 'react-slideshow-image/dist/styles.css'
 import { Slide } from 'react-slideshow-image';
+import styled from 'styled-components';
+
+const Styles = styled.div`
+  .each-slide > div {
+    height: 70vh;
+  }
+`;
+
+
 
 const slideImages = [
-  'images/slide_1.jpg',
-  'images/slide_1.jpg',
-  'images/slide_1.jpg'
+  'images/slide1.png',
+  'images/slide2.png',
+  'images/slide3.png'
 ];
 
 
 
 function Slideshow() {
     return (
-        <div>
+        <Styles>
         <Slide easing="ease">
           <div className="each-slide">
             <div style={{'backgroundImage': `url(${slideImages[0]})`}}>
@@ -37,7 +46,7 @@ function Slideshow() {
             </div>
           </div>
         </Slide>
-      </div>
+      </Styles>
     )
 }
 

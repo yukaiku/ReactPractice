@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import { Link } from 'react-router-dom';
 import { Nav, Navbar } from 'react-bootstrap';
 import styled from 'styled-components';
@@ -6,6 +6,11 @@ import styled from 'styled-components';
 const Styles = styled.div`
   .navbar {
     background-color: #222;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    z-index: 999;
   }
 
   a, .navbar-brand, .navbar-nav .nav-link {
@@ -16,11 +21,36 @@ const Styles = styled.div`
     }
   }
 
+  .navBarTransparent {
+        background-color: rgba(0, 0, 0,0.5);
+    },
+  .navBarSolid {
+        background-color: #222;
+    }
 `;
 
-export const NavigationBar = () => (
-  <Styles>
-    <Navbar expand="lg" variant="dark">
+function NavigationBar() {
+  const [navBackground, setNavBackground] = useState('navBarTransparent')
+    const navRef = React.useRef()
+    navRef.current = navBackground
+    useEffect(() => {
+        const handleScroll = () => {
+            const show = window.scrollY > 320
+            if (show) {
+                setNavBackground('navBarSolid')
+            } else {
+                setNavBackground('navBarTransparent')
+            }
+        }
+        document.addEventListener('scroll', handleScroll)
+        return () => {
+            document.removeEventListener('scroll', handleScroll)
+        }
+    }, [])
+
+  return (
+    <Styles>
+    <Navbar collapseOnSelect expand="lg" variant="dark" className={navRef.current}>
       <Navbar.Brand href="/">
         <img
         src="./images/logo.png"
@@ -35,32 +65,35 @@ export const NavigationBar = () => (
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="ml-auto">
           <Nav.Item>
-            <Nav.Link>
-              <Link to="/FindUs">Find Us</Link>
+            <Nav.Link eventKey="1">
+              <Link to="/FindUs">FINDS US</Link>
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link>
-              <Link to="/Menu">Menus</Link>
+            <Nav.Link eventKey="1">
+              <Link to="/Menu">MENU</Link>
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link>
-              <Link to="/Opportunities">Opportunities</Link>
+            <Nav.Link eventKey="1">
+              <Link to="/Opportunities">OPPORTUNITIES</Link>
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link>
-              <Link to="/Contact">Rate Us</Link>
+            <Nav.Link eventKey="1">
+              <Link to="/Contact">RATE US</Link>
             </Nav.Link>
           </Nav.Item>
           <Nav.Item>
-            <Nav.Link>
-              <Link to="/">Order & Pick Up</Link>
+            <Nav.Link eventKey="1">
+              <Link to="/">ORDER & PICK UP</Link>
             </Nav.Link>
           </Nav.Item>
         </Nav>
       </Navbar.Collapse>
     </Navbar>
   </Styles >
-)
+  )
+}
+
+export default NavigationBar

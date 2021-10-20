@@ -21,12 +21,15 @@ const Styles = styled.div`
 
   .social-icon-link {
   color: gold;
-  font-size: 24px;
-  padding-right: 2%;
+  font-size: 30px;
+  padding-right: 10%;
   }
 
   .header {
       text-decoration: underline;
+  }
+  .footerAddress{
+      font-family: Gecade;
   }
 
   @media screen and (max-width: 820px) {
@@ -93,10 +96,22 @@ export const Footer = () => (
                 </div>
             </div>
             <div className="address"><header className="header">Address</header><br/>
-                    ....</div>
+                    <p className="footerAddress">3/1  Park Road. Milton. QLD 4064<br/>
+                    0432123756<br/>
+                    info@miltonmilton.com.au
+                    </p>
+            </div>
             <div className="tradingHours">
                 <header className="header">Trading Hours</header><br/>
-                    ....
+                <p className="footerAddress">
+                    Monday: 0000 - 2400<br />
+                    Tuesday: 0000 - 2400 <br />
+                    Wednesday: 0000 - 2400<br />
+                    Thursday: 0000 - 2400 <br />
+                    Friday: 0000 - 2400 <br/>
+                    Saturday: 0000 - 2400 <br />
+                    Sunday: 0000 - 2400 <br />
+                </p>
             </div>
         </div>
     </Styles>
