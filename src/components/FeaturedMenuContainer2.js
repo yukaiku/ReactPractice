@@ -63,8 +63,8 @@ function FeaturedMenuContainer2() {
                 <div className="banner">
                 <div className="banner-content">
                 <h1>MENU</h1>
-                <p>Click the button below to download the PDF version</p>
-                <a href="https://facebook.com" className="btn btn-dark">Download</a>
+                        <p>Click the button below to download the PDF version</p>
+                <a href="pdf/menu.pdf" className="btn btn-dark"><i class="fa fa-download"></i>Download</a>
                 </div>
                 </div>
             </div>

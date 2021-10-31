@@ -84,10 +84,12 @@ function NavigationBar() {
               <Link to="/Contact">RATE US</Link>
             </Nav.Link>
           </Nav.Item>
-          <Nav.Item>
-            <Nav.Link eventKey="1">
+            <Nav.Item>
+              <a className="nav-link" href="https://www.doordash.com/en-AU/store/milton-milton-restaurant-milton-2353943/?gclid=Cj0KCQjw_fiLBhDOARIsAF4khR0zBCvikChurukx4YRLFhHLdd4xJojlv86ix0ZXbcFkkVvx3BH0OCoaAmD0EALw_wcB&gclsrc=aw.ds&ignore_splash_experience=true&utm_campaign=CX_AU_SE_GP_GO_ACQ_2742__%20&utm_medium=GPA_Ads&utm_source=Google" target="_blank">ORDER & PICK UP</a>
+              {/* <Nav.Link eventKey="1">
+                
               <Link to="/">ORDER & PICK UP</Link>
-            </Nav.Link>
+            </Nav.Link> */}
           </Nav.Item>
         </Nav>
       </Navbar.Collapse>

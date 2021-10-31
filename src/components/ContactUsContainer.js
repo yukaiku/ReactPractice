@@ -87,7 +87,7 @@ function ContactUsContainer() {
     setServerState({ submitting: true });
     axios({
       method: "post",
-      url: "https://formspree.io/xrgrdweo",
+      url: "https://formspree.io/f/xeqvbopb",
       data: new FormData(form)
     })
       .then(r => {

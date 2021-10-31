@@ -53,23 +53,16 @@ export const Footer = () => (
         <div className="footer">
             <div className="socialMediaIcon ">
                 <div class='social-icons'>
-                    <Link
-                    class='social-icon-link facebook'
-                    to='/'
-                    target='_blank'
-                    aria-label='Facebook'
-                    >
-                    <i class='fab fa-facebook-f' />
-                    </Link>
-                    <Link
-                    class='social-icon-link instagram'
-                    to='/'
-                    target='_blank'
-                    aria-label='Instagram'
-                    >
-                    <i class='fab fa-instagram' />
-                    </Link>
-                    <Link
+                    <a className='social-icon-link facebook' aria-label='Facebook' href="https://www.facebook.com/miltonmiltonau" target="_blank">
+                        <i class='fab fa-facebook-f' />
+                    </a>
+                    <a className='social-icon-link twitter' aria-label='Twitter' href="https://twitter.com/miltonmilton_au" target="_blank">
+                        <i class='fab fa-twitter' />
+                    </a>
+                    <a className='social-icon-link instagram' aria-label='Instagram' href="https://www.instagram.com/miltonmilton_au/" target="_blank">
+                        <i class='fab fa-instagram' />
+                    </a>
+                    {/* <Link
                     class='social-icon-link youtube'
                     to='/'
                     target='_blank'
@@ -81,18 +74,10 @@ export const Footer = () => (
                     class='social-icon-link twitter'
                     to='/'
                     target='_blank'
-                    aria-label='Twitter'
-                    >
-                    <i class='fab fa-twitter' />
-                    </Link>
-                    <Link
-                    class='social-icon-link twitter'
-                    to='/'
-                    target='_blank'
                     aria-label='LinkedIn'
                     >
                         <i class='fab fa-linkedin' />
-                    </Link>
+                    </Link> */}
                 </div>
             </div>
             <div className="address"><header className="header">Address</header><br/>
@@ -104,13 +89,13 @@ export const Footer = () => (
             <div className="tradingHours">
                 <header className="header">Trading Hours</header><br/>
                 <p className="footerAddress">
-                    Monday: 0000 - 2400<br />
-                    Tuesday: 0000 - 2400 <br />
-                    Wednesday: 0000 - 2400<br />
-                    Thursday: 0000 - 2400 <br />
-                    Friday: 0000 - 2400 <br/>
-                    Saturday: 0000 - 2400 <br />
-                    Sunday: 0000 - 2400 <br />
+                    Monday	11:30am–2:30pm, 5:30–9pm<br />
+                    Tuesday	11:30am–2:30pm, 5:30–9pm<br />
+                    Wednesday	11:30am–2:30pm, 5:30–9pm<br />
+                    Thursday	11:30am–2:30pm, 5:30–9pm<br />
+                    Friday	Closed<br />
+                    Saturday	11:30am–2:30pm, 5:30–9pm<br />
+                    Sunday: 5:30–9pm <br />
                 </p>
             </div>
         </div>

@@ -11,7 +11,7 @@ const Styles = styled.div`
     
 }
 `;
-function infoBox(props) {
+function InfoBox(props) {
 
     return (
         <Styles>
@@ -27,4 +27,4 @@ function infoBox(props) {
     )
 }
 
-export default infoBox;
+export default InfoBox;

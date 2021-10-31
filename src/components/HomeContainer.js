@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 // get our fontawesome imports
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import InfoBox from "./infoBox";
+import InfoBox from "./InfoBox";
 import styled from 'styled-components';
 import { Viewport } from 'react-is-in-viewport';
 const Styles = styled.div`
@@ -88,14 +88,14 @@ function HomeContainer() {
   
   return (
       <Styles>
-        <section style={{ textAlign: "center" }}>
+        {/* <section style={{ textAlign: "center" }}>
           <header style={{fontSize:"30px", fontWeight:"bold", color:"gold"}}>Your Food Journey</header>
           <bold style={{fontSize:"20px", fontWeight:"bold"}}>Starts Here</bold>
           <br/>
           <FontAwesomeIcon icon="angle-down" size="3x" color="gold" />
           <br/>
-        </section>
-        <section className="contents">
+        </section> */}
+        {/* <section className="contents">
           <Viewport className="content"
             type="fit"
             onEnter={onEnterAboutUs}
@@ -132,9 +132,8 @@ function HomeContainer() {
               <InfoBox info={culinarySecrets} />
             </div>
           </Viewport>
-          </section>
-          <section>
-          </section>
+        </section> */}
+
         
       </Styles>
   )

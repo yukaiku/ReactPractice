@@ -43,11 +43,11 @@ function Layout(props) {
   return (
     <Styles>
       <Slideshow/>
-      <div className="bg">
+      {/* <div className="bg">
         <Container>
          {props.children}
         </Container>
-      </div>
+      </div> */}
   </Styles>
   )
 }

@@ -32,22 +32,22 @@ function Opportunities() {
                 <div className="jobContainer">
                     <div className="fohContainer jumbotron">
                         <h3>Food Servers</h3>
-                        <h4>Job Description</h4>
+                        {/* <h4>Job Description</h4>
                         ....
                         <h4>Requirement</h4>
-                            ....
+                            .... */}
                         <p class="applyBtn">
-                            <a class="btn btn-dark" href="#" role="button">Apply Now</a>
+                            <a class="btn btn-dark" href="https://form.jotform.com/212502798150857" role="button">Apply Now</a>
                         </p>   
                     </div>
                     <div className="khContainer jumbotron">
                         <h3>Kitchen Hand</h3>
-                        <h4>Job Description</h4>
+                        {/* <h4>Job Description</h4>
                         ....
                         <h4>Requirement</h4>
-                            ....
+                            .... */}
                         <p class="applyBtn">
-                            <a class="btn btn-dark" href="#" role="button">Apply Now</a>
+                            <a class="btn btn-dark" href="https://form.jotform.com/212502798150857" role="button">Apply Now</a>
                         </p>    
                     </div>
                 </div>

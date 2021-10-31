@@ -3,7 +3,8 @@ import styled from 'styled-components';
 import Layout from '../components/Layout';
 // import FeaturedMenuContainer from '../components/FeaturedMenuContainer';
 import FeaturedMenuContainer2 from '../components/FeaturedMenuContainer2';
-import InformationMenuContainer from '../components/InformationMenuContainer';
+// import InformationMenuContainer from '../components/InformationMenuContainer';
+import InformationMenuContainer2 from '../components/InformationMenuContainer2';
 const Styles = styled.div`
     .menuContainer{
         padding-top: 2%;
@@ -33,7 +34,7 @@ function Menu() {
         <Styles>
             <div className="menuContainer">
                 <FeaturedMenuContainer2 />
-                <InformationMenuContainer/>
+                <InformationMenuContainer2/>
             </div>
         </Styles>
         </Layout>

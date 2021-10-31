@@ -6,14 +6,20 @@ import styled from 'styled-components';
 
 const Styles = styled.div`
   .each-slide > div {
-    height: 70vh;
+    height: 100vh;
+  }
+  div{
+    height: 100vh;
+    background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   }
 `;
 
 
 
 const slideImages = [
-  'images/slide1.png',
+  'images/slide1.jpg',
   'images/slide2.png',
   'images/slide3.png'
 ];
@@ -22,8 +28,10 @@ const slideImages = [
 
 function Slideshow() {
     return (
-        <Styles>
-        <Slide easing="ease">
+      <Styles>
+        <div style={{ 'backgroundImage': `url(${slideImages[0]})` }}>
+        </div>
+        {/* <Slide easing="ease">
           <div className="each-slide">
             <div style={{'backgroundImage': `url(${slideImages[0]})`}}>
               <div className="slideShowBox">
@@ -45,7 +53,7 @@ function Slideshow() {
               </div>
             </div>
           </div>
-        </Slide>
+        </Slide> */}
       </Styles>
     )
 }
