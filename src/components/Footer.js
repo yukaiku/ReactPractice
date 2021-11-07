@@ -52,15 +52,15 @@ export const Footer = () => (
     <Styles>
         <div className="footer">
             <div className="socialMediaIcon ">
-                <div class='social-icons'>
+                <div className='social-icons'>
                     <a className='social-icon-link facebook' aria-label='Facebook' href="https://www.facebook.com/miltonmiltonau" target="_blank">
-                        <i class='fab fa-facebook-f' />
+                        <i className='fab fa-facebook-f' />
                     </a>
                     <a className='social-icon-link twitter' aria-label='Twitter' href="https://twitter.com/miltonmilton_au" target="_blank">
-                        <i class='fab fa-twitter' />
+                        <i className='fab fa-twitter' />
                     </a>
                     <a className='social-icon-link instagram' aria-label='Instagram' href="https://www.instagram.com/miltonmilton_au/" target="_blank">
-                        <i class='fab fa-instagram' />
+                        <i className='fab fa-instagram' />
                     </a>
                     {/* <Link
                     class='social-icon-link youtube'
@@ -95,7 +95,7 @@ export const Footer = () => (
                     Thursday	11:30am–2:30pm, 5:30–9pm<br />
                     Friday	Closed<br />
                     Saturday	11:30am–2:30pm, 5:30–9pm<br />
-                    Sunday: 5:30–9pm <br />
+                    Sunday: Closed <br />
                 </p>
             </div>
         </div>

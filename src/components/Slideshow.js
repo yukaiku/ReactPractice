@@ -1,6 +1,5 @@
 import React from 'react'
-import './Slideshow.css'
-import 'react-slideshow-image/dist/styles.css'
+import './Slideshow.css';
 import { Slide } from 'react-slideshow-image';
 import styled from 'styled-components';
 
@@ -52,8 +51,8 @@ function Slideshow() {
                 <span>To an area near you!</span>
               </div>
             </div>
-          </div>
-        </Slide> */}
+          </div> 
+      </Slide> */}
       </Styles>
     )
 }
