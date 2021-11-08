@@ -82,19 +82,19 @@ export const Footer = () => (
             </div>
             <div className="address"><header className="header">Address</header><br/>
                     <p className="footerAddress">3/1  Park Road. Milton. QLD 4064<br/>
-                    0432123756<br/>
+                    0466181181<br/>
                     info@miltonmilton.com.au
                     </p>
             </div>
             <div className="tradingHours">
                 <header className="header">Trading Hours</header><br/>
                 <p className="footerAddress">
-                    Monday	11:30am–2:30pm, 5:30–9pm<br />
-                    Tuesday	11:30am–2:30pm, 5:30–9pm<br />
-                    Wednesday	11:30am–2:30pm, 5:30–9pm<br />
-                    Thursday	11:30am–2:30pm, 5:30–9pm<br />
+                    Monday	11:30am–2pm, 5:30–9pm<br />
+                    Tuesday	11:30am–2pm, 5:30–9pm<br />
+                    Wednesday	11:30am–2pm, 5:30–9pm<br />
+                    Thursday	11:30am–2pm, 5:30–9pm<br />
                     Friday	Closed<br />
-                    Saturday	11:30am–2:30pm, 5:30–9pm<br />
+                    Saturday	11:30am–2pm, 5:30–9pm<br />
                     Sunday: Closed <br />
                 </p>
             </div>
