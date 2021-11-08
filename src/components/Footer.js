@@ -82,7 +82,7 @@ export const Footer = () => (
             </div>
             <div className="address"><header className="header">Address</header><br/>
                     <p className="footerAddress">3/1  Park Road. Milton. QLD 4064<br/>
-                    0466181181<br/>
+                    <a href="tel:0466181181">0466181181</a><br/>
                     info@miltonmilton.com.au
                     </p>
             </div>
