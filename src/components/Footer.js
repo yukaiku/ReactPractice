@@ -89,12 +89,12 @@ export const Footer = () => (
             <div className="tradingHours">
                 <header className="header">Trading Hours</header><br/>
                 <p className="footerAddress">
-                    Monday	11:30am–2pm, 5:30–9pm<br />
-                    Tuesday	11:30am–2pm, 5:30–9pm<br />
-                    Wednesday	11:30am–2pm, 5:30–9pm<br />
-                    Thursday	11:30am–2pm, 5:30–9pm<br />
-                    Friday	11:30am–2pm, 5:30–9pm<br />
-                    Saturday	11:30am–2pm, 5:30–9pm<br />
+                    Monday	11:30am–2:00pm, 5:30–9:00pm<br />
+                    Tuesday	11:30am–2:00pm, 5:30–9:00pm<br />
+                    Wednesday	11:30am–2:00pm, 5:30–9:00pm<br />
+                    Thursday	11:30am–2:00pm, 5:30–9:00pm<br />
+                    Friday	11:30am–2:00pm, 5:30–9:00pm<br />
+                    Saturday	11:30am–2:00pm, 5:30–9:00pm<br />
                     Sunday: Closed <br />
                 </p>
             </div>
