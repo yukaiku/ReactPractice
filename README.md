@@ -1,5 +1,9 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+##
+
+Slide show in slideshow.js not working right now, last updated 6 Jan 2022,
+
 ## Available Scripts
 
 In the project directory, you can run:
