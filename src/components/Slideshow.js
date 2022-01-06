@@ -1,36 +1,32 @@
-import React from 'react'
-import './Slideshow.css';
+import React from "react";
+import "./Slideshow.css";
 // import { Slide } from 'react-slideshow-image';
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const Styles = styled.div`
   .each-slide > div {
     height: 100vh;
   }
-  div{
+  div {
     height: 100vh;
     background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 `;
 
-
-
 const slideImages = [
-  'images/slide1.jpg',
-  'images/slide2.png',
-  'images/slide3.png'
+  "images/slide1.jpg",
+  "images/slide2.png",
+  "images/slide3.png",
 ];
 
-
-
 function Slideshow() {
-    return (
-      <Styles>
-        <div style={{ 'backgroundImage': `url(${slideImages[0]})` }}>
-        </div>
-        {/* <Slide easing="ease">
+  return (
+    <Styles>
+      {/*  This is where i would go to change back to slideshow */}
+      <div style={{ backgroundImage: `url('images/banner.png')` }}></div>
+      {/* <Slide easing="ease">
           <div className="each-slide">
             <div style={{'backgroundImage': `url(${slideImages[0]})`}}>
               <div className="slideShowBox">
@@ -53,8 +49,8 @@ function Slideshow() {
             </div>
           </div> 
       </Slide> */}
-      </Styles>
-    )
+    </Styles>
+  );
 }
 
-export default Slideshow
+export default Slideshow;
